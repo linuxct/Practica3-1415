@@ -1,10 +1,10 @@
                .data 
 str_1:	.asciiz   "Introduce un entero: "
 str_2:	.asciiz   "Introduce un flotante: "
-str_3:     .asciiz   "Introduce una cadena de caracteres: "
+str_3:  .asciiz   "Introduce una cadena de caracteres: "
 str_4:	.asciiz   "el entero escrito es: "
 str_5:	.asciiz   "el flotante escrito es: "
-str_6:     .asciiz   "la cadena escrita es: "
+str_6:  .asciiz   "la cadena escrita es: "
 enter:	.asciiz	  " \n" 
               .align 2
 dat_w:	.word    30,10,3002,-16340
