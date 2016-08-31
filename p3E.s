@@ -6,11 +6,11 @@ __start:
 li $t0,'[' 				#Empezamos por el caracter posterior a la Z segun la tabla de codigos ASCII. Tambien se podria haber puesto 91.
 bucle:
 	sub $t0,1 			#Decrementamos $t0
-	move $a0,$t0		#Copiamos el caracter de t0 para mostrarlo en a0
+	move $a0,$t0			#Copiamos el caracter de t0 para mostrarlo en a0
 	li $v0,11			#Usamos 11 para imprimir un caracter
 	syscall				#Llamada al sistema
 
-	beq $t0,'A',fin 	#Si t0 = caracter 'A', fin del bucle. Tambien se podria haber puesto 65.
+	beq $t0,'A',fin 		#Si t0 = caracter 'A', fin del bucle. Tambien se podria haber puesto 65.
 	la	$a0,coma		#Si no se finaliza, preparamos la salida de una coma ','
 	li $v0,4			#Escribe cadena de texto
 	syscall				#Llamada al sistema
